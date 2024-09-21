@@ -29,8 +29,8 @@ const projects = (await getCollection("projects"))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hello, my name is [Your Name]"
-          tagline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus."
+          title="Liam Parker"
+          tagline="Software Engineering Student"
           align="start"
         />
 
@@ -53,7 +53,7 @@ const projects = (await getCollection("projects"))
         <div class="gallery">
           <Grid variant="offset">
             {
-              projects.map((project) => (
+              projects.map((project: any) => (
                 <li>
                   <ProjectPreview project={project} />
                 </li>
